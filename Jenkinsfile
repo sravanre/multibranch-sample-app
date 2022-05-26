@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh '''echo complete'''
+        echo uptime
       }
     }
   }
