@@ -5,6 +5,9 @@ pipeline {
   }
   stages {
     stage('Build') {
+      when {
+        branch 'fix-123'
+      }
       steps {
         echo "hwllow workd "
       }
