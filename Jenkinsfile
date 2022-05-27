@@ -12,6 +12,27 @@ pipeline {
         echo "hwllow workd "
       }
     }
+    stage('testing on chrome'){
+      parallel{
+
+        stage('testing on chrome'){
+          steps{
+            echo 'tested on chrome'
+          }
+        }
+        stage('testing on firefox'){
+          steps{
+            echo 'testing on chrome'
+          }
+        }
+
+      }
+    }
+    stage('Deploy'){
+      steps{
+        echo 'deployed to the test'
+      }
+    }
   }
   post {
     always {
