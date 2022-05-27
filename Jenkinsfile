@@ -28,6 +28,11 @@ pipeline {
 
       }
     }
+    stage('Deploy'){
+      steps{
+        echo 'deployed to the test'
+      }
+    }
   }
   post {
     always {
