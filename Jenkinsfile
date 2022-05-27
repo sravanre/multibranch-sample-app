@@ -22,10 +22,10 @@ pipeline {
         }
         stage('testing on firefox'){
           steps{
-            sh '''echo testing on the chrom'''
+            echo 'testing on chrome'
           }
         }
-        
+
       }
     }
   }
